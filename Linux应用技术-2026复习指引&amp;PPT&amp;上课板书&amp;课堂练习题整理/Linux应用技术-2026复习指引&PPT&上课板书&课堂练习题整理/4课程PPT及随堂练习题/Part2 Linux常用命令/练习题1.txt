@@ -1,0 +1,36 @@
+1、超级用户root的主目录位于？普通用户的主目录通常位于？
+
+2、如何创建/tmp/test.conf文件？
+
+3、如何删除/tmp下所有A开头的文件？ 
+
+4、删除当前目录下所有以“.o”结尾的文件。
+
+5、如何一次性创建目录/text/1/2/3/4？
+
+6、如何查看/etc所占的磁盘空间？
+
+7、什么是绝对路径与相对路径
+
+8、查找/etc/passwd文件中 关键字‘gnome’所在的行
+
+9、显示/etc/passwd文件的第11-20行，其命令为（）：
+	A.head -11 /etc/passwd｜tail -20
+	B.head -11 /etc/passwd｜tail -20 /etc/passwd
+	C.head -20 /etc/passwd｜tail
+	D.head /etc/passwd｜tail
+
+10、列出/home内的test.txt 查时层级最多为3层
+	
+11、统计/usr/bin/目录下的文件个数；
+
+12、设置/test/a.txt属主有读写执行权限，属组内用户有读写权限，组外其他用户的权限为只读
+
+13、需要将一个普通文件的权限更改为-rwxr-xr—，请问该如何执行命令？
+
+14、某系统中有用户user1和user2,同属于users组.在user1用户目录下有一文件file1,它拥有644的权限,如果user2用户想修改user1用户目录下的file1文件,应拥有？权限，如下的权限中，哪个设置支持user2用户完成该操作（）.
+	A 744 B 664 C 646 D 746
+
+
+
+

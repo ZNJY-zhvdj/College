@@ -1,0 +1,41 @@
+16.一个bash shell脚本的第一行是（   ）？
+A.#/bin/csh               B.#/bin/bash
+C./bin/bash                D.#!/bin/bash
+40. 一下哪个环境变量表示当前路径（    ）。
+A. PATH       B. PWD         C. HOME            D.ROOT
+
+10．在Shell脚本中，用来读取文件内各个域的内容并将其赋值给Shell变量的命令是____ 。
+A. fold     	 	B. join    	 	C. tr    		D. read
+。
+32．Passwd文件的（）字段是用来定义用户的默认shell。
+
+42.编写的 Shell 程序运行前必须赋予___权限。
+ 
+9. 对于Shell脚本程序，若输入参数数量多于9个，则程序遍历每个参数可通过使用____命令实现
+
+47.LINUX的shell除了作为命令解释程序以外，它还是一种 （） 语言。
+
+48.Shell中的表达式分为 哪几种？
+
+64.Shell脚本的注释行以字符（）开头。
+
+22.如下为命令终端下的一个截图：则以下两句的执行结果是：___                          
+path=‘the home path is $HOME’
+echo $path 
+23. 以下为程序名为prog的程序内容。则 sh prog a b c d的执行结果为___.  
+set A B C D
+shift
+shift
+echo $1
+
+10.在文件中进行字符串查找，使用（  ）命令。
+
+4．Shell程序中，对用户变量赋值有哪些方式？简要说明每种赋值方式的使用方法。
+
+
+24.列举出至少4个常用的Shell系统变量，并说明它们的含义。
+
+
+5、列举Linux系统中最重要的5个环境变量。
+
+

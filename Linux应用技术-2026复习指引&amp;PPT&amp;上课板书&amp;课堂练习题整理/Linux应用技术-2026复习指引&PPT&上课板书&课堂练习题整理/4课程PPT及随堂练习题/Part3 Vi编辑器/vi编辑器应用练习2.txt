@@ -1,0 +1,42 @@
+﻿
+1、在/etc目录下搜索查找是否有passwd这个文件；
+
+2、如果有该文件，请复制该文件至/home目录下；
+
+3、检查/home/passwd文件中是否有包含“root”字符串的行；
+
+4、修改/home/passwd文件的权限，对所有人可读、可写、可执行；
+
+5、使用vi编辑器打开/home/passwd文件，设定一下行号；
+
+6、移动至/home/passwd文件的第10行，复制该行内容，
+    并粘贴至最后一行之前；
+7、删除/home/passwd文件中5到10行之间的内容；
+删除后反悔，全部复原；
+8、移动至/home/passwd文件的最后一行，
+并且在最后一行搜寻一下“bash”这个字符串；
+9、将最后一行中的字符串“bash”全部替换为“BASH”；
+10、将修改后/home/passwd文件另存为一个名为“passwd_test”的文件；
+11、保存后退出；
+
+-----------------------------------------------------
+命令参考（不唯一,练习过程中可以多尝试，注意vi编辑器三种模式的切换）：
+1.find /etc -name passwd
+2.cp /etc/passwd /home
+3.grep root /home/passwd
+4.chomod 777 /home/passwd
+5. vim /home/passwd
+   :set nu
+6. :10
+   yy
+   G（光标可转入最后一行）
+   输入 O（大写O）
+   输入p命令 实现粘贴
+
+7. 5,10d 
+    U
+8. G
+   /bash
+9  :%/bash/BASH
+10. :w passwd_test
+11. :wq

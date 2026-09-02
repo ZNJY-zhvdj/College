@@ -1,0 +1,27 @@
+一、操作题样例（写出完成下述功能的命令序列）
+
+1．假设你是系统管理员，需要增加一个新的用户账号zheng，为新用户设置初始密码zheng，锁定用户账号uly，并删除用户账号chang。
+答：
+	#useradd zheng
+  	#passwd  zheng
+  	#usermod –L zheng
+  	#userdel zheng
+
+tail -5 /etc/passwd
+
+2．假设你是系统管理员，需要增加一个新的用户账号zheng，为新用户设置初始密码zheng；创建一个新的用户组grouptest，然后将用户zheng添加至用户组grouptest中，并验证是否添加成功
+答：
+	#useradd zheng
+  	#passwd  zheng
+  	#groupadd grouptest
+  	#gpasswd -a zheng grouptest
+	#tail -5 /etc/group  或者 groups zheng
+
+
+
+
+3.若给需要将/home/zheng目录下的所有文件打包压缩成/tmp/zheng.tar.gz，你准备怎么做？当需要从压缩包中恢复时，又该如何处理？
+答：
+	#tar –zcvf  /tmp/zheng.tar.gz  /home/zheng
+ 	 #tar -zxvf /tmp/zheng.tar.gz
+
